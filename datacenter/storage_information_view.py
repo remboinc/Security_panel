@@ -10,9 +10,9 @@ def storage_information_view(request):
     names = ", ".join(not_leaved_users)
 
     entered_at = Visit.objects.filter(leaved_at=None)[0].entered_at
-    visit_duration = Visit.get_duration(visit)
-    format_duration = Visit.format_duration(visit_duration)
-    is_strange = Visit.is_visit_long(visit, minutes=60)
+    visit_duration = visit.get_duration(visit)
+    format_duration = visit.format_duration(visit_duration)
+    is_strange = visit.is_visit_long(visit, minutes=60)
 
     non_closed_visits = [
         {
