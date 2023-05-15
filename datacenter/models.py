@@ -64,5 +64,3 @@ class Visit(models.Model):
         if visit_time > minutes:
             return True
         return False
-
-
