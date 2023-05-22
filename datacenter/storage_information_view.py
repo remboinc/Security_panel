@@ -10,7 +10,7 @@ def storage_information_view(request):
     for visit in not_leaved:
         entered_at = visit.entered_at
         visit_duration = visit.get_duration()
-        format_duration = visit.format_duration(visit_duration)
+        format_duration = Visit.format_duration(visit_duration)
         is_strange = visit.is_visit_long(minutes=60)
         owner_name = visit.passcard.owner_name
 
