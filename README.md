@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ## Run
 To run the script, enter the command:
 ```
-python main.py
+python manage.py runserver 0.0.0.0:8000
 ```
 
 ## Project Goals
