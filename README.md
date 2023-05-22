@@ -20,7 +20,7 @@ Before start to deploy install requirements:
 pip install -r requirements.txt
 ```
 ## Environment variables
-You need to create an .env file. Example:
+You need to create an `.env` file. Example:
 ```
 DB_ENGINE=django.db.backends.example
 DB_HOST=example.com
