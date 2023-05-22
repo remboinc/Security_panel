@@ -19,6 +19,21 @@ Before start to deploy install requirements:
 ```
 pip install -r requirements.txt
 ```
+## Environment variables
+You need to create an .env file. Example:
+```
+DB_ENGINE=django.db.backends.example
+DB_HOST=example.com
+DB_PORT=5432
+DB_NAME=example
+DB_USER=admin
+DB_PASSWORD=example
+
+
+APP_SECRET_KEY=example
+DEBUG=true
+ALLOWED_HOSTS=0.0.0.0,localhost
+```
 ## Run
 To run the script, enter the command:
 ```
